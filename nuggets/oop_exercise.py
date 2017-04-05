@@ -21,7 +21,7 @@ class Entry(object):
     def get_id(self):
         return self._id
 
-    def setId(self, _id):
+    def set_id(self, _id):
         self._id = _id
 
     # ID
@@ -42,8 +42,8 @@ def main():
     c.print_balance()
 
     e = Entry()
-    e.setId(69)
-    print e.getId()
+    e.set_id(69)
+    print e.get_id()
 
 if __name__ == '__main__':
     main()
