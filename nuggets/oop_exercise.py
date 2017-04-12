@@ -8,7 +8,6 @@ class Category(object):
     def __init__(self):
         pass
 
-
 class Entry(object):
 
     def __init__(self, _id):

@@ -1,7 +1,7 @@
 import math, random
 
 class Circle():
-    '''Construtor que recebe um valor para o radius'''
+    ''' Construtor que recebe um valor para o radius '''
     def __init__(self, radius):
         if radius == 0:
             self.radius = random.uniform(1.1,9.5)
