@@ -2,58 +2,80 @@
 
 
 class Employee:
-    """ metodo construtor, usamos o self como primeiro parametro para receber a
-        propria instancia do objeto, também podem ser passados outros parametros """
+    """Classe Base para todos os tipos de employees do sistema"""
     # Variavel de Classe
-    # disponivel não somente para instancias, mas pode ser usada usando Employee.raise_amount
-    # E como uma variavel static no Java
-    raise_amount = 1.04
+    # disponivel para uso de classes Ex: Employee.raise_amt
+    # pode ser usar em instancias, bu is silly
+    # É como uma variavel static no Java
+    raise_amt = 1.04
+
+    # metodo construtor, usamos o self como primeiro parametro para receber a
+    # propria instancia do objeto, também podem ser passados outros parametros
+    # somente um método __init__ pode ser usado na classe
+    # como alternativa para outros contrutores podemos usar métodos de classe.
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
         self.email = first + '.' + last + '@company.com'
 
+    # Metodo de instancia, SEMPRE recebe o objeto no parametro 'self' como padrão isso não muda.
+    # dentro do metodo, pode usar atributos de classe por meio do 'self.'
     def full_name(self):
-        """Metodo de instancia, SEMPRE recebe o objeto no parametro 'self' como padrão isso não muda.
-            dentro do metodo, pode usar atributos de classe por meio do 'self.'"""
         return '{} {}'.format(self.first, self.last)
 
     def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
-
-emp_01 = Employee("Jonatan", "Vianna", 5000)
-emp_02 = Employee("Ale", "Kopi", 5000)
-
-# print(emp_01.full_name()) # passa automaticamente a instancia da classe
-# print(Employee.full_name(emp_02)) se usarmos o caminho 'absoluto da classe' temos que passar a instacia explicitamente
+        self.pay = int(self.pay * self.raise_amt)
 
 
-def uso_da_variavel_de_classe_01():
-    # imprime o salario
-    print(emp_02.pay)
+class Developer(Employee):
+    # sobrescrever o raise_amt de Employee, se eu usar o Developer.apply_raise() ele aumenta 10% ao inves de 4%
+    raise_amt = 1.10
 
-    # usa o metodo que aumenta o salario
-    emp_02.apply_raise()
-
-    # aqui já com o aumento
-    print(emp_02.pay)
-
-    # imprime o valor atual da variavel da classe
-    print(Employee.raise_amount)
-
-    # imprime o namespace da instancia emp02, a qual não tem a variavel raise_amount
-    print(emp_02.__dict__)
-
-    # seta na instancia a variavel raise_amount com o valor 1.06
-    emp_02.raise_amount = 1.06
-
-    # imprime o namespace da instancia emp02, que agora tem a sua variavel de instancia raise_amount
-    print(emp_02.__dict__)
-
-    # imprime o namespace da classe Employee com a variavel de classe raise_amount
-    print(Employee.__dict__)
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
 
 
-uso_da_variavel_de_classe_01()
+class Manager(Employee):
+    # Não passamos parametros mutaveis como listas ou dicionarios no caso de employees passamos None.
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
 
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+
+    def remove_emp(self, emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+
+    def print_emps(self):
+        for emp in self.employees:
+            print("-->", emp.full_name)
+
+# Instancias de Developer, que herdam de Employee
+dev_1 = Developer('Jonatan', 'Kopichenko', 60000, 'Python')
+dev_2 = Developer('Ale', 'Kopichenko', 80000, 'Java')
+dev_3 = Developer('Cyan', 'Garamond', 80000, 'C')
+
+mgr_01 = Manager('Celes', 'Chere', 100000, [dev_2])
+
+print(mgr_01.email)
+mgr_01.add_emp(dev_1)
+mgr_01.add_emp(dev_3)
+mgr_01.print_emps()
+
+print(dev_1.email)
+print(dev_1.prog_lang)
+print(dev_1.pay)
+dev_1.apply_raise()
+print(dev_1.pay)
+
+# Metodo help imprime informações sobre a classe que precisamos.
+# Nela tem  ordem de resolução de métodos que é a ordem em que o python ve os metodos da classe em questão.
+# print(help(Developer))

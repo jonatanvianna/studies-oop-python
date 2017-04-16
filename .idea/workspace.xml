@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b052c8-7918-4ed6-aa75-56ac07216bda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/corey/poo_02.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/studies-oop-python.iml" afterPath="$PROJECT_DIR$/.idea/studies-oop-python.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/corey/poo_01.py" afterPath="$PROJECT_DIR$/corey/poo_01.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/corey/poo_02.py" afterPath="$PROJECT_DIR$/corey/poo_02.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,29 +22,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="poo_01.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="poo_01.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corey/poo_01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="e#1961#2258#0" expanded="false" />
                 <element signature="e#2320#3090#0" expanded="false" />
                 <element signature="e#3153#4142#0" expanded="false" />
                 <element signature="e#4200#4923#0" expanded="false" />
+                <element signature="e#4982#5376#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="poo_02.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="poo_02.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/corey/poo_02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="e#1225#1920#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +61,7 @@
     <findStrings>
       <find>amount</find>
       <find>raise_amount</find>
+      <find>full_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +81,8 @@
         <option value="$PROJECT_DIR$/nuggets/oop3.py" />
         <option value="$PROJECT_DIR$/nuggets/oop_exercise.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/corey/poo_02.py" />
         <option value="$PROJECT_DIR$/corey/poo_01.py" />
+        <option value="$PROJECT_DIR$/corey/poo_02.py" />
       </list>
     </option>
   </component>
@@ -128,7 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,7 +169,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,24 +184,7 @@
       <recent name="$PROJECT_DIR$/nuggets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.poo_01">
-    <configuration default="false" name="ex41" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lpthw" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="studies-oop-python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lpthw/ex41.py" />
-      <option name="PARAMETERS" value="english" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.poo_02">
     <configuration default="false" name="oop_exercise" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -268,6 +249,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="studies-oop-python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nuggets/oop3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="poo_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/corey" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="studies-oop-python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/corey/poo_02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -407,19 +405,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ex41" />
-      <item index="1" class="java.lang.String" itemvalue="Python.oop_exercise" />
-      <item index="2" class="java.lang.String" itemvalue="Python.point_" />
-      <item index="3" class="java.lang.String" itemvalue="Python.poo_01" />
-      <item index="4" class="java.lang.String" itemvalue="Python.oop3" />
+      <item index="0" class="java.lang.String" itemvalue="Python.oop_exercise" />
+      <item index="1" class="java.lang.String" itemvalue="Python.point_" />
+      <item index="2" class="java.lang.String" itemvalue="Python.poo_01" />
+      <item index="3" class="java.lang.String" itemvalue="Python.oop3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.poo_02" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.poo_01" />
-        <item index="1" class="java.lang.String" itemvalue="Python.oop3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.point_" />
-        <item index="3" class="java.lang.String" itemvalue="Python.oop_exercise" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ex41" />
+        <item index="0" class="java.lang.String" itemvalue="Python.poo_02" />
+        <item index="1" class="java.lang.String" itemvalue="Python.poo_01" />
+        <item index="2" class="java.lang.String" itemvalue="Python.oop3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.point_" />
+        <item index="4" class="java.lang.String" itemvalue="Python.oop_exercise" />
       </list>
     </recent_temporary>
   </component>
@@ -448,7 +446,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31942633" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20951417" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -456,6 +454,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="1437" y="146" width="1663" height="859" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -784,26 +783,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corey/poo_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#1225#1920#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/corey/poo_01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="e#1961#2258#0" expanded="false" />
             <element signature="e#2320#3090#0" expanded="false" />
             <element signature="e#3153#4142#0" expanded="false" />
             <element signature="e#4200#4923#0" expanded="false" />
+            <element signature="e#4982#5376#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corey/poo_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="37" lean-forward="true" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

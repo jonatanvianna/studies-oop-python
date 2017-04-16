@@ -151,7 +151,6 @@ def uso_do_satic_method_01():
     print(Employee.is_workday(my_date))
 
 
-
 # uso_do_instance_method_01()
 # uso_da_variavel_de_classe_01()
 # uso_do_class_method_01()
