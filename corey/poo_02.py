@@ -39,6 +39,7 @@ class Developer(Employee):
 
 class Manager(Employee):
     # Não passamos parametros mutaveis como listas ou dicionarios no caso de employees passamos None.
+    # COrey tem mais videos sobre isso.
     def __init__(self, first, last, pay, employees=None):
         super().__init__(first, last, pay)
         if employees is None:
