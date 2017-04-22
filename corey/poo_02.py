@@ -29,7 +29,7 @@ class Employee:
 
 
 class Developer(Employee):
-    # sobrescrever o raise_amt de Employee, se eu usar o Developer.apply_raise() ele aumenta 10% ao inves de 4%
+    # sobrescreve o raise_amt de Employee, se eu usar o Developer.apply_raise() ele aumenta 10% ao inves de 4%
     raise_amt = 1.10
 
     def __init__(self, first, last, pay, prog_lang):
@@ -39,7 +39,7 @@ class Developer(Employee):
 
 class Manager(Employee):
     # Não passamos parametros mutaveis como listas ou dicionarios no caso de employees passamos None.
-    # COrey tem mais videos sobre isso.
+    # Corey tem mais videos sobre isso.
     def __init__(self, first, last, pay, employees=None):
         super().__init__(first, last, pay)
         if employees is None:
@@ -57,26 +57,45 @@ class Manager(Employee):
 
     def print_emps(self):
         for emp in self.employees:
-            print("-->", emp.full_name)
+            print("-->", emp.full_name())
 
 # Instancias de Developer, que herdam de Employee
 dev_1 = Developer('Jonatan', 'Kopichenko', 60000, 'Python')
 dev_2 = Developer('Ale', 'Kopichenko', 80000, 'Java')
 dev_3 = Developer('Cyan', 'Garamond', 80000, 'C')
-
 mgr_01 = Manager('Celes', 'Chere', 100000, [dev_2])
 
-print(mgr_01.email)
-mgr_01.add_emp(dev_1)
-mgr_01.add_emp(dev_3)
-mgr_01.print_emps()
 
-print(dev_1.email)
-print(dev_1.prog_lang)
-print(dev_1.pay)
-dev_1.apply_raise()
-print(dev_1.pay)
+def uso_de_subclasse_01():
+    print(mgr_01.email)
+    mgr_01.add_emp(dev_1)
+    mgr_01.add_emp(dev_3)
+    mgr_01.print_emps()
 
-# Metodo help imprime informações sobre a classe que precisamos.
-# Nela tem  ordem de resolução de métodos que é a ordem em que o python ve os metodos da classe em questão.
-# print(help(Developer))
+
+def uso_de_subclasse_02():
+    print(dev_1.email)
+    print(dev_1.prog_lang)
+    print(dev_1.pay)
+    dev_1.apply_raise()
+    print(dev_1.pay)
+
+
+def uso_metodo_help():
+    # Metodo help imprime informações sobre a classe que precisamos.
+    # Nela tem  ordem de resolução de métodos que é a ordem em que o python ve os metodos da classe em questão.
+    print(help(Developer))
+    print(help(Employee))
+    print(help(Manager))
+
+
+def uso_de_built_in_methods():
+    # isinstance verifica se
+    print(isinstance(mgr_01, Employee))
+    print(issubclass(Developer, Manager))
+
+
+# uso_metodo_help()
+# uso_de_subclasse_01()
+# uso_de_subclasse_01()
+# uso_de_built_in_methods()
