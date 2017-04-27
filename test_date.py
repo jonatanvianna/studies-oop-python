@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import datetime, argparse
+import datetime
+import argparse
 
 
 parser = argparse.ArgumentParser(description="Teste Entradade Data")
@@ -8,8 +9,6 @@ parser.add_argument('-s', "--startdate", help="The Start Date - format YYYY-MM-D
 args = parser.parse_args()
 
 print(args.startdate)
-
-
 
 
 def valid_date(s):
