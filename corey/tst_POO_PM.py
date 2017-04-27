@@ -2,15 +2,16 @@
 # coding: utf-8
 import datetime
 
+
 class FileLog:
     def __init__(self, log_path):
         self.log_path = log_path
 
-    def build_date(self):
-        d = datetime.datetime.now() - datetime.timedelta(hours=24)
+    def build_date(self, rng):
+        d = datetime.datetime.now() - datetime.timedelta(hours=rng)
         list_log_to_search = []
 
-        for i in range(0, 24):
+        for i in range(0, rng):
             if d.day < 10:
                 dia = "0" + str(d.day)
             else:
@@ -40,15 +41,19 @@ class MercuryFileLog(FileLog):
     def __init__(self):
         super().__init__(MercuryFileLog.MERCURY_PATH)
 
+
 class AtmailFileLog(FileLog):
-    ATMAIL_PATH = "/gfs-log/mail-cmgw-mia/cmgw/mail_cmgw_unified.log."
+    ATMAIL_PATH = "/gfs-log/mail-web-mia/atmail/atmail.log."
 
     def __init__(self):
         super().__init__(AtmailFileLog.ATMAIL_PATH)
 
 m = MercuryFileLog()
-print(m.log_path)
 a = AtmailFileLog()
 
-l = a.build_date()
+l = a.build_date(5)
+l2 = m.build_date(6)
+
+for i in l:
+    print(i)
 
