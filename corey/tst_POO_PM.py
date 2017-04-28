@@ -48,12 +48,20 @@ class AtmailFileLog(FileLog):
     def __init__(self):
         super().__init__(AtmailFileLog.ATMAIL_PATH)
 
+
+class Dovecot2FileLog(FileLog):
+    DOVECOT2_PATH = "/gfs-log/mail-box-mia/docevot2/docevot2.log."
+
+    def __init__(self):
+        super().__init__(Dovecot2FileLog.DOVECOT2_PATH)
+
 m = MercuryFileLog()
 a = AtmailFileLog()
+d = Dovecot2FileLog()
 
 l = a.build_date(5)
 l2 = m.build_date(6)
+l3 = d.build_date(30)
 
-for i in l:
+for i in l3:
     print(i)
-
