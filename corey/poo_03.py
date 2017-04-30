@@ -1,5 +1,5 @@
 # unicode:utf-8
-
+import datetime
 
 class Employee:
     def __init__(self, first, last):
@@ -13,7 +13,7 @@ class Employee:
     # decorator property proporciona que se use o methodo como uma propriedade da classe
     @property
     def fullname(self):
-        """Recebe o nome separado por espaço, Ex "Locke Cole"""
+        """Retorna o nome separado por espaço, Ex "Locke Cole"""
         return '{} {}'.format(self.first, self.last)
 
     # decorator <nome_da_property>.setter transforma o metodo em setter, mas tem que ter o mesmo nome da property
@@ -32,4 +32,10 @@ print(emp_01.fullname)
 emp_01.first = "Tina"
 print(emp_01.email)
 print(emp_01.fullname)
+
+
+d = datetime.datetime.now()
+print(datetime.datetime.strftime(d, "%Y"))
+print(d.strftime("%Y-%m-%dT%H"))
+
 
