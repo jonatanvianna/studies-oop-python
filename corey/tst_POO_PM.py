@@ -4,7 +4,6 @@ import datetime
 import argparse
 
 
-
 class User:
     def __init__(self, username, id_perm, brand, domain):
         self.username = username
@@ -99,6 +98,10 @@ class MercuryFileLog(FileLog):
 
     def __init__(self, date_range):
         super().__init__(MercuryFileLog.MERCURY_PATH, date_range, MercuryFileLog.LOG_SUFFIX)
+
+    def aqui_um_metodo_especifico_para_o_mercury(self):
+
+        pass
 
 
 class AtmailFileLog(FileLog):
